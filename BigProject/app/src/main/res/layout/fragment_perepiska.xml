@@ -1,0 +1,65 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.student.bigproject.PerepiskaFragment">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/imageformessage"
+            android:layout_width="@dimen/message_image"
+            android:layout_height="@dimen/message_image"
+            android:scaleType="centerCrop"
+            />
+
+        <TextView
+            android:id="@+id/nameformessage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_message_text" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="15">
+
+        <ListView
+            android:id="@+id/messageslist"
+            android:layout_width="wrap_content"
+            android:layout_height="329dp"
+            android:layout_weight="16.50">
+
+
+        </ListView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5">
+
+            <EditText
+                android:id="@+id/addmessage"
+                android:layout_width="324dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/imgbuttonsend"
+                android:background="@null"
+                android:src="@drawable/ic_send_black_24dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
